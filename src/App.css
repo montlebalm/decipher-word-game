@@ -1,38 +1,59 @@
-.App {
+#root {
+  align-items: center;
+  background: #fbfbfb;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.app {
+  max-width: 600px;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.alphabet {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.alphabet_letter {
+  margin: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coded_text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coded_text_word {
+  display: flex;
+  margin: 0 8px;
+}
+
+.coded_text_input {
+  height: 4rem;
+  width: 400px;
+}
+
+.decoded_text_cell {
+  margin: 8px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 1rem;
+}
+
+.decoded_text_guess {
+  color: salmon;
+  text-align: center;
+}
+
+/*
+ * Helpers
+ */
+
+hr {
+  margin: 40px 0;
 }
